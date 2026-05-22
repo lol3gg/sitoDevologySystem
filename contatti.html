@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contatti e preventivo | Devology Studio</title>
+    <meta
+      name="description"
+      content="Contatta Devology Studio per richiedere un preventivo su sviluppo software personalizzato, web app su misura, siti web e piattaforme digitali."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">
+          <span class="logo-mark" aria-hidden="true">DV</span>
+          Devology <span>Studio</span>
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Apri menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 6h18M3 12h18M3 18h18"></path>
+          </svg>
+        </button>
+        <nav class="main-nav" data-nav>
+          <a href="index.html">Home</a>
+          <a href="chi-siamo.html">Chi siamo</a>
+          <a href="servizi.html">Servizi</a>
+          <a href="soluzioni.html">Soluzioni</a>
+          <a href="metodo.html">Metodo di lavoro</a>
+          <a class="active" href="contatti.html">Contatti</a>
+          <a class="btn btn-primary" href="contatti.html">Richiedi preventivo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero page-hero--split">
+        <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 0">
+          <div data-reveal style="max-width: 800px">
+            <span class="pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <path d="M22 6l-10 7L2 6"></path>
+              </svg>
+              Contatti / Preventivo
+            </span>
+            <h1 class="display" style="margin: 1rem 0">
+              Richiedi informazioni o un preventivo professionale
+            </h1>
+            <p class="section-lead" style="max-width: 62ch; font-size: 1.08rem">
+              Raccontaci il tuo obiettivo: analizziamo la tua esigenza e ti proponiamo una soluzione
+              digitale concreta, chiara e su misura. Primo confronto senza impegno per fattibilita',
+              tempi e approccio tecnico.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top: 0">
+        <div class="container">
+          <div class="grid-2" style="align-items: start; gap: 1.75rem">
+            <div class="form-panel" data-reveal>
+              <div class="form-panel__head">
+                <h2>Invia la tua richiesta</h2>
+                <p>
+                  Compila il modulo: all'invio si apre WhatsApp con il messaggio già pronto verso il nostro
+                  numero — ti basta confermare l'invio.
+                </p>
+              </div>
+              <form id="contact-form" action="#" method="post" data-whatsapp-form>
+                <div class="form-row-2">
+                  <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required autocomplete="name" />
+                  </div>
+                  <div>
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required autocomplete="email" />
+                  </div>
+                </div>
+                <div class="form-row-2">
+                  <div>
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" name="telefono" type="tel" autocomplete="tel" />
+                  </div>
+                  <div>
+                    <label for="azienda">Azienda</label>
+                    <input id="azienda" name="azienda" type="text" autocomplete="organization" />
+                  </div>
+                </div>
+                <div>
+                  <label for="tipo-progetto">Tipo di progetto</label>
+                  <select id="tipo-progetto" name="tipo-progetto">
+                    <option value="">Seleziona</option>
+                    <option>Web app su misura</option>
+                    <option>Software personalizzato</option>
+                    <option>Sito web professionale</option>
+                    <option>Piattaforma personalizzata</option>
+                    <option>Ottimizzazione strumenti digitali</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="messaggio">Messaggio</label>
+                  <textarea id="messaggio" name="messaggio" required placeholder="Descrivi obiettivi, vincoli e tempistiche ideali."></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit" style="width: fit-content">
+                  Invia su WhatsApp
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+                  </svg>
+                </button>
+              </form>
+
+              <div class="faq-compact" style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border)">
+                <p class="section-kicker" style="margin-bottom: 0.75rem">FAQ rapide</p>
+                <div class="faq-item">
+                  <button class="faq-question" type="button">Cosa include il primo contatto?</button>
+                  <div class="faq-answer">
+                    Un orientamento su fattibilita', ordine di grandezza tempi/costi e prossimi passi —
+                    senza impegno.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" type="button">Servono documenti tecnici?</button>
+                  <div class="faq-answer">
+                    No. Basta descrivere il problema; in caso integreremo con analisi mirate in call.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <button class="faq-question" type="button">Lavorate anche con privati o startup?</button>
+                  <div class="faq-answer">
+                    Si', con progetti chiari e obiettivi definiti — anche in fasi successive.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-workspace" data-reveal>
+              <div class="workspace-panel">
+                <div class="workspace-panel__head">
+                  <strong>Workspace richieste</strong>
+                  <span class="ui-badge ui-badge--live">Inbox</span>
+                </div>
+                <div style="padding: 12px; background: #fafafa">
+                  <div class="ui-browser" style="border-radius: 10px; overflow: hidden">
+                    <div class="ui-browser__bar">
+                      <div class="ui-browser__dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                      <div class="ui-browser__url">contacts.devology.system / queue</div>
+                    </div>
+                    <div class="ui-browser__body" style="padding: 10px">
+                      <div class="ui-activity">
+                        <div class="ui-activity__row">
+                          <span>Nuova · Web app</span>
+                          <span class="ui-badge ui-badge--warn">New</span>
+                        </div>
+                        <div class="ui-activity__row">
+                          <span>In revisione</span>
+                          <span class="ui-badge ui-badge--live">Triage</span>
+                        </div>
+                        <div class="ui-activity__row">
+                          <span>Risposta inviata</span>
+                          <span class="ui-badge ui-badge--ok">Done</span>
+                        </div>
+                      </div>
+                      <div class="ui-line-chart" style="margin-top: 10px; height: 40px" aria-hidden="true">
+                        <div class="ui-line-chart__bar" style="height: 50%"></div>
+                        <div class="ui-line-chart__bar" style="height: 65%"></div>
+                        <div class="ui-line-chart__bar" style="height: 45%"></div>
+                        <div class="ui-line-chart__bar" style="height: 72%"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-card">
+                <h2>Contatto diretto</h2>
+                <p>
+                  Per richieste rapide: rispondiamo con un primo orientamento tecnico e operativo.
+                </p>
+                <ul class="contact-list">
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <path d="M22 6l-10 7L2 6"></path>
+                    </svg>
+                    <span><a href="mailto:devologysystem243@gmail.com">devologysystem243@gmail.com</a></span>
+                  </li>
+                  <li>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span><a href="tel:+393793833583">+39 379 383 3583</a></span>
+                  </li>
+                </ul>
+                <a class="btn btn-ghost" style="margin-top: 0.5rem; width: 100%; justify-content: center" href="https://wa.me/393793833583?text=Ciao%20Devology%20Studio%2C%20vorrei%20informazioni%20sul%20vostro%20servizio." target="_blank" rel="noopener noreferrer">
+                  Scrivici su WhatsApp
+                </a>
+              </div>
+
+              <div class="info-pills">
+                <div class="info-pill">
+                  <div>
+                    <strong>Tempo medio di risposta</strong>
+                    <span>Entro 24–48 ore lavorative</span>
+                  </div>
+                </div>
+                <div class="info-pill">
+                  <div>
+                    <strong>Analisi iniziale</strong>
+                    <span>Obiettivi, stack e fattibilita'</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="after-contact-steps">
+                <h3>Cosa succede dopo il primo contatto</h3>
+                <ol>
+                  <li>Lettura della richiesta e eventuali domande di chiarimento mirate.</li>
+                  <li>Call breve (se utile) per allineare priorità e vincoli.</li>
+                  <li>Proposta di approccio: scope, fasi, tempi indicativi e prossimi passi.</li>
+                </ol>
+              </div>
+
+              <div class="card" style="box-shadow: var(--shadow-md)">
+                <p class="muted" style="margin: 0; line-height: 1.65">
+                  Raccontaci la tua idea o la tua esigenza: ti aiuteremo a trasformarla in una soluzione
+                  digitale concreta.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sm section--surface">
+        <div class="container">
+          <div class="cta-band" data-reveal>
+            <div>
+              <h3>Preferisci una mail diretta?</h3>
+              <p>Scrivici ora: stesso livello di attenzione, risposta strutturata.</p>
+            </div>
+            <a class="btn btn-primary" href="mailto:devologysystem243@gmail.com">Scrivici ora</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <span class="logo-mark" aria-hidden="true">DV</span>
+            Devology <span>Studio</span>
+          </a>
+          <p>
+            Sviluppo software personalizzato, web app su misura, siti web professionali e piattaforme
+            digitali per aziende e privati.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigazione</h4>
+          <ul>
+            <li><a href="chi-siamo.html">Chi siamo</a></li>
+            <li><a href="servizi.html">Servizi</a></li>
+            <li><a href="soluzioni.html">Soluzioni</a></li>
+            <li><a href="metodo.html">Metodo di lavoro</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Servizi</h4>
+          <ul>
+            <li><a href="servizi.html">Web app su misura</a></li>
+            <li><a href="servizi.html">Software personalizzato</a></li>
+            <li><a href="servizi.html">Piattaforme personalizzate</a></li>
+            <li><a href="servizi.html">Ottimizzazione digitale</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contatti</h4>
+          <ul>
+            <li><a href="mailto:devologysystem243@gmail.com">devologysystem243@gmail.com</a></li>
+            <li><a href="tel:+393793833583">+39 379 383 3583</a></li>
+            <li><a href="https://wa.me/393793833583?text=Ciao%20Devology%20Studio%2C%20vorrei%20informazioni%20sul%20vostro%20servizio." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            <li><a href="contatti.html">Richiedi preventivo</a></li>
+            <li><a href="https://devology.system" target="_blank" rel="noopener">devology.system</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>&copy; <span id="year"></span> Devology Studio. Tutti i diritti riservati.</span>
+        <span class="muted">Soluzioni digitali per aziende · sviluppo software personalizzato</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
